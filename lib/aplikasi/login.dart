@@ -65,7 +65,7 @@ class LoginPage extends StatelessWidget{
               borderSide: BorderSide.none),
           fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
           filled: true,
-          prefixIcon:const Icon(Icons.person) 
+          prefixIcon:const Icon(Icons.lock) 
           ),
           obscureText: true,
         ),

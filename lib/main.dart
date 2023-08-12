@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: LoginPage(),
-      title: 'Dinkes App - UAS Sahl',
+      title: 'Rachmat Ashari Mobile',
     );
   }
 }

@@ -51,7 +51,7 @@ class RegisterPage extends StatelessWidget{
               borderSide: BorderSide.none),
           fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
           filled: true,
-          prefixIcon:const Icon(Icons.person) 
+          prefixIcon:const Icon(Icons.account_circle) 
           ),
         ),
         const SizedBox(height: 10),
@@ -63,7 +63,7 @@ class RegisterPage extends StatelessWidget{
               borderSide: BorderSide.none),
           fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
           filled: true,
-          prefixIcon:const Icon(Icons.person) 
+          prefixIcon:const Icon(Icons.mail) 
           ),
         ),
         const SizedBox(height: 10),
@@ -87,18 +87,20 @@ class RegisterPage extends StatelessWidget{
               borderSide: BorderSide.none),
           fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
           filled: true,
-          prefixIcon:const Icon(Icons.person) 
+          prefixIcon:const Icon(Icons.lock) 
           ),
           obscureText: true,
         ),
         const SizedBox(height: 10),
         ElevatedButton(
-          onPressed:() {},
+          onPressed:() {Navigator.of(context).push(MaterialPageRoute(builder: (context){
+          return LoginPage();
+        }));},
           style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
             padding: const EdgeInsets.symmetric(vertical: 16)
           ), 
-          child: const Text("Login",style: TextStyle(fontSize: 20),),
+          child: const Text("Registrasi",style: TextStyle(fontSize: 20),),
           ),
           const SizedBox(height: 10),
       ],
